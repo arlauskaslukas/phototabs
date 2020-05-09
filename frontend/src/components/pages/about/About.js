@@ -9,6 +9,7 @@ import simonas from '../../../images/simon.jpg'
 import julius from '../../../images/juliux.jpg'
 import ben from '../../../images/ben.jpg'
 import laurynas from '../../../images/laurynas.jpg'
+import karolis from '../../../images/karolis.jpg'
 
 const title = 'Homepage';
 
@@ -100,10 +101,11 @@ const useStyles = makeStyles({
               <Typography variant='h2' align='center' style={{fontFamily:'Open Sans', borderBottom:'3px ridge', borderColor:'8E9AAF'}}>
                 OUR TEAM
               </Typography>
-              <MemberLeft img={simonas} name="SIMONAS BANSEVIČIUS" title="CEO" text='Gimiau but bosu. GG WP' style={{fontFamily:'Open Sans'}}></MemberLeft>
+              <MemberLeft img={simonas} name="SIMONAS BANSEVIČIUS" title="TEAM LEAD" text='Gimiau but bosu. GG WP' style={{fontFamily:'Open Sans'}}></MemberLeft>
               <MemberRight img={julius} name="JULIUS ARMALIS" title="DEVELOPER" text='Gimiau but bosu. GG WP' style={{fontFamily:'Open Sans'}}></MemberRight>
               <MemberLeft img={ben} name="BENAS MILIŪNAS" title="APP DEVELOPER" text='Gimiau but bosu. GG WP' style={{fontFamily:'Open Sans'}}></MemberLeft>
               <MemberRight img={laurynas} name="LAURYNAS VARNAS" title="AI DEVELOPER" text='Gimiau but bosu. GG WP' style={{fontFamily:'Open Sans'}}></MemberRight>
+              <MemberLeft img={karolis} name="KAROLIS BUTKUS" title="DEVELOPER" text='Gimiau but bosu. GG WP' style={{fontFamily:'Open Sans'}}></MemberLeft>
           </Container>
         </div>
       </>
