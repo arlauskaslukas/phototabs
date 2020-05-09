@@ -4,6 +4,7 @@ import {Toolbar} from '@material-ui/core';
 import Button from '@material-ui/core/Button';
 import logo from '../logo.png';
 import {makeStyles} from '@material-ui/core/styles';
+import appcss from '../App.css'
 
 const useStyles = makeStyles({
   appBar: {
@@ -13,10 +14,10 @@ const useStyles = makeStyles({
     flexGrow: 1,
   },
   spacingBetween: {
-    flexGrow: 0.15,
+    flexGrow: 0.05,
   },
   spacingLogo: {
-    flexGrow: 0.7
+    flexGrow: 1
   },
   icon: {
     marginLeft: '6px',
@@ -26,7 +27,7 @@ const useStyles = makeStyles({
     'font-size': '1.2rem',
     paddingLeft: '24px',
     paddingRight: '24px',
-    borderBottom: '1px ridge',
+    fontSize:'15px',
     fontFamily: 'Open Sans',
     color: 'black'
   },
@@ -37,30 +38,30 @@ const useStyles = makeStyles({
 
 function NavBar() {
   const classes = useStyles();
+  
 
   return (
     <>
-      <AppBar className={classes.appBar}>
+      <AppBar className={classes.appBar} style={{opacity:'0.97', justifyContent:'space-between'}}>
         <Toolbar>
           
           <Button className={classes.icon} href="/" aria-label="home">
             <img src={logo} alt="logo" width={'70px'} height={'70px'} />
           </Button>
-
           <div className={classes.spacingLogo} />
+          
+          <div class='navbarbutton' style={{display:'flex', alignContent:'flex-end', justifyItems:'flex-end'}}>
+            <div className={classes.grow}></div>
+            <Button className={classes.nav} href="/phototabs">
+              ABOUT #PHOTOTABS
+            </Button>
 
-          <div className={classes.spacingBetween} />
+            <div className={classes.spacingBetween} />
 
-          <Button className={classes.nav} href="/phototabs">
-            ABOUT #PHOTOTABS
-          </Button>
-
-          <div className={classes.spacingBetween} />
-
-          <Button className={classes.nav} href="/about">
-            MEET #THE-TEAM
-          </Button>
-          <div className={classes.grow} />
+            <Button className={classes.nav} href="/about">
+              MEET #THE-TEAM
+            </Button>
+          </div>
         </Toolbar>
       </AppBar>
       <Toolbar />
