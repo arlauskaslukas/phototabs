@@ -49,9 +49,11 @@ const useStyles = makeStyles({
         <Helmet>
           <title>{title}</title>
         </Helmet>
-        <Container style={{backgroundColor:'#C4E0F9', display:'flex'}}>
-            <img src={logo}></img>
-        </Container>
+        <div style={{backgroundColor:'#efd3d7'}}>
+            <Container style={{backgroundColor:'#C4E0F9', height:'100vh'}} maxWidth='xl'>
+                <img src={logo}></img>
+            </Container>
+        </div>
       </>
     );
   }
