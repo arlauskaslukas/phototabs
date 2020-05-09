@@ -52,13 +52,13 @@ function NavBar() {
           <div className={classes.spacingBetween} />
 
           <Button className={classes.nav} href="/phototabs">
-            ABOUT PHOTOTABS
+            ABOUT #PHOTOTABS
           </Button>
 
           <div className={classes.spacingBetween} />
 
           <Button className={classes.nav} href="/about">
-            ABOUT THE TEAM
+            MEET #THE-TEAM
           </Button>
           <div className={classes.grow} />
         </Toolbar>

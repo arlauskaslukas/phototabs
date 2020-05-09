@@ -4,6 +4,9 @@ import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import { Container } from '@material-ui/core';
 import logo from '../../../logo.png';
+import applogo from '../../../images/app.jpg'
+import teamlogo from '../../../images/team.jpg'
+import { Component } from 'react'
 
 const title = 'Homepage';
 
@@ -41,6 +44,18 @@ const useStyles = makeStyles({
       position: 'absolute'
     }
   });
+
+  class ImgButton extends Component {
+    render() {
+      return (
+        <a href={this.props.url}>
+          <img src={this.props.image} alt={'Page logo'} style={{height: '93vh', width:'50vw',transition:'opacity 300ms ease-in-out', filter:'opacity(100%)'}} 
+          
+          />
+        </a>
+      );
+    }
+  }
   
   function Homepage() {
     const classes = useStyles();
@@ -49,11 +64,24 @@ const useStyles = makeStyles({
         <Helmet>
           <title>{title}</title>
         </Helmet>
-        <div style={{backgroundColor:'#efd3d7'}}>
-            <Container style={{backgroundColor:'#C4E0F9', height:'100vh'}} maxWidth='xl'>
-                <img src={logo}></img>
-            </Container>
-        </div>
+        <Grid container 
+              spacing={0}
+              alignItems="stretch"
+              justify="space-between"
+              style={{height:'auto'}}
+              >
+                <Grid item xs={12} sm={6}>
+                  <ImgButton image={applogo} url={'/phototabs'} text={''} />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <ImgButton
+                  image={teamlogo}
+                  url={'/about'}
+                  text={''}
+                  style={classes.img}
+                  />
+                </Grid>
+        </Grid>
       </>
     );
   }
