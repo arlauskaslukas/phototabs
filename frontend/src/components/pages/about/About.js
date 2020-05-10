@@ -52,13 +52,13 @@ const useStyles = makeStyles({
     render() {
       return(
         <Grid container spacing={0} style={{borderBottom:'2px ridge', borderColor:'#8E9AAF', marginTop:'10px', flex:1, justifyContent:'center', alignItems:'center'}}>
-            <Grid item sm={6} style={{height:'100%', textAlign:'center'}}>
-              <Typography variant='h3'>
+            <Grid item sm={6} style={{height:'100%',fontSize:'25px', textAlign:'center'}}>
+              <h3>
                 {this.props.name}
-              </Typography>
-              <Typography variant='h3' style={{fontWeight:'bold'}}>
+              </h3>
+              <h3>
                 {this.props.title}
-              </Typography>
+              </h3>
             </Grid>
             <Grid item sm={6}>
               <img src={this.props.img} style={{width:'100%'}}></img>
@@ -75,13 +75,13 @@ const useStyles = makeStyles({
             <Grid item sm={6}>
               <img src={this.props.img} style={{width:'100%'}}></img>
             </Grid>
-            <Grid item sm={6} style={{height:'100%', textAlign:'center'}}>
-              <Typography variant='h3'>
+            <Grid item sm={6} style={{height:'100%', fontSize:'25px', textAlign:'center'}}>
+              <h3>
                 {this.props.name}
-              </Typography>
-              <Typography variant='h3' style={{fontWeight:'bold'}}>
+              </h3>
+              <h3>
                 {this.props.title}
-              </Typography>
+              </h3>
             </Grid>
         </Grid>
       );
@@ -96,16 +96,17 @@ const useStyles = makeStyles({
         <Helmet>
           <title>{title}</title>
         </Helmet>
-        <div style={{backgroundColor:'#efd3d7'}}>
-          <Container style={{backgroundColor:'#C4E0F9', minHeight:'100vh', borderRight:'2px ridge', borderLeft:'2px ridge'}} maxWidth='lg'>
-              <Typography variant='h2' align='center' style={{fontFamily:'Open Sans', borderBottom:'3px ridge', borderColor:'8E9AAF'}}>
-                OUR TEAM
-              </Typography>
-              <MemberLeft img={simonas} name="SIMONAS BANSEVIČIUS" title="TEAM LEAD" text='Gimiau but bosu. GG WP' style={{fontFamily:'Open Sans'}}></MemberLeft>
-              <MemberRight img={julius} name="JULIUS ARMALIS" title="DEVELOPER" text='Gimiau but bosu. GG WP' style={{fontFamily:'Open Sans'}}></MemberRight>
-              <MemberLeft img={ben} name="BENAS MILIŪNAS" title="APP DEVELOPER" text='Gimiau but bosu. GG WP' style={{fontFamily:'Open Sans'}}></MemberLeft>
-              <MemberRight img={laurynas} name="LAURYNAS VARNAS" title="AI DEVELOPER" text='Gimiau but bosu. GG WP' style={{fontFamily:'Open Sans'}}></MemberRight>
-              <MemberLeft img={karolis} name="KAROLIS BUTKUS" title="DEVELOPER" text='Gimiau but bosu. GG WP' style={{fontFamily:'Open Sans'}}></MemberLeft>
+        <div style={{backgroundColor:'#fcfcfc'}}>
+          <Container style={{backgroundColor:'#fcfcfc',paddingTop:'150px', paddingBottom:'30px', minHeight:'100vh', fontFamily:'Montserrat-Light', fontSize:'15px'}} maxWidth='lg'>
+              <h2 align='center' style={{fontFamily:'Montserrat', color:'#565656', fontSize:'50px'}}>
+                Meet our Team
+              </h2>
+              <div style={{marginBottom:'150px'}}></div>
+              <MemberLeft img={simonas} name="Simonas Bansevičius" title="TEAM LEAD" text='Gimiau but bosu. GG WP' style={{fontFamily:'Montserrat-Light'}}></MemberLeft>
+              <MemberRight img={julius} name="Julius Armalis" title="DEVELOPER" text='Gimiau but bosu. GG WP' style={{fontFamily:'Montserrat-Light'}}></MemberRight>
+              <MemberLeft img={ben} name="Benas Miliūnas" title="APP DEVELOPER" text='Gimiau but bosu. GG WP' style={{fontFamily:'Montserrat-Light'}}></MemberLeft>
+              <MemberRight img={laurynas} name="Laurynas Varnas" title="AI DEVELOPER" text='Gimiau but bosu. GG WP' style={{fontFamily:'Montserrat-Light'}}></MemberRight>
+              <MemberLeft img={karolis} name="Karolis Butkus" title="DEVELOPER" text='Gimiau but bosu. GG WP' style={{fontFamily:'Montserrat-Light'}}></MemberLeft>
           </Container>
         </div>
       </>

@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     paddingLeft: '24px',
     paddingRight: '24px',
     fontSize:'15px',
-    fontFamily: 'Open Sans',
+    fontFamily: 'Montserrat-Light',
     color: 'black'
   },
   icons: {
