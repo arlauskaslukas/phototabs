@@ -75,28 +75,30 @@ const useStyles = makeStyles({
                   
                 </Grid>
                 <Grid item xs={12} style={{fontFamily:'Montserrat-Light', textAlign:'center', fontSize:'15px'}}>
-                  <h1>
+                  <h1 style={{marginTop:'150px', marginBottom:'80px', fontFamily:'Montserrat', color:'#565656'}}>Let us imagine a story</h1>
+                  
+                  <h2>
                     So... Let's suppose you're trying to learn how to play a few songs on a guitar! Maybe you want to impress that spicy girl or you want to become a member of a local band...
-                  </h1>
+                  </h2>
                 </Grid>
                 <Grid item xs={12} style={{fontFamily:'Montserrat-Light', textAlign:'center', fontSize:'15px'}}>
-                  <h1>
+                  <h2>
                     You take your guitar, search for a song to play and you see this horror:
-                  </h1>
+                  </h2>
                 </Grid>
                 <Grid item xs={12} style={{}}>
-                  <img src={second} style={{display:'block', marginLeft:'auto', marginRight:'auto'}}></img>
+                  <img src={second} style={{display:'block', marginLeft:'auto', marginBottom:'50px', marginRight:'auto'}}></img>
                 </Grid>
                 <Grid item xs={12} style={{fontFamily:'Montserrat-Light', textAlign:'center', fontSize:'15px'}}>
-                  <h1>
+                  <h2>
                     How you're supposed to learn all these notes if the date's tomorrow? <br/> <br/>
                     ...<br/> <br/>
                     Fear not, fellow guitarist! <br/> <br/>
                     PhotoTabs will be here to help you by turning all these notes into a simple and understandable tabs notation!
-                  </h1>
+                  </h2>
                 </Grid>
-                <Grid item xs={12} style={{fontFamily:'Montserrat-Light', textAlign:'center', fontSize:'25px'}}>
-                  <h1>
+                <Grid item xs={12} style={{fontFamily:'Montserrat-Light', textAlign:'center', fontSize:'15px'}}>
+                  <h1 style={{marginTop:'150px', marginBottom:'100px', fontFamily:'Montserrat', color:'#565656'}}>
                     "How this works?" - you ask. We answer:
                   </h1>
                 </Grid>
@@ -125,9 +127,9 @@ const useStyles = makeStyles({
                   </Typography>
                 </Grid>
                 <Grid item xs={12} style={{fontFamily:'Montserrat-Light', textAlign:'center', fontSize:'15px'}}>
-                  <h1>
+                  <h2 style={{marginTOp:'100px', marginBottom:'60px'}}>
                     Using our app, you can learn songs on guitar easier and land that girl and 10 years later play songs not only to her but to the children of yours too... (Don't tell her about us though ;) )
-                  </h1>
+                  </h2>
                 </Grid>
                 <Grid item xs={12} style={{}}>
                   <img src={final} style={{display:'block', marginLeft:'auto', marginRight:'auto'}}></img>
