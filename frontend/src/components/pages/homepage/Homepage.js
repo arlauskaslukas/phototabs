@@ -68,7 +68,7 @@ const useStyles = makeStyles({
               spacing={0}
               alignItems="stretch"
               justify="space-between"
-              style={{height:'auto'}}
+              style={{height:'auto', zoom:'1.335'}}
               >
                 <Grid item xs={12} sm={6}>
                   <ImgButton image={applogo} url={'/phototabs'} text={''} />
